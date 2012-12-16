@@ -1,0 +1,31 @@
+﻿<ul class="nav pull-right">
+    @if (Request.IsAuthenticated) {
+        <li>@Html.ActionLink(User.Identity.Name, "ChangePassword", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Change password" })</li>
+        <li>@Html.ActionLink("Log off", "LogOff", "Account")</li>
+    } else {
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-user"></i><b class="caret"></b>
+            </a>
+            <div class="dropdown-menu">
+                <form action="/Account/Login" method="POST">
+                    <div class="clearfix">
+                        <div class="input">
+                            <input type="text" placeholder="username" id="UserName" name="UserName"  />
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="input">
+                            <input type="password" placeholder="password" id="Password" name="Password" />
+                        </div>
+                    </div>
+
+                    <div class="sign-in-pulldown">
+                        <input type="submit" value="Sign In" class="btn-primary" /><a href="/Account/Register" class="pull-right">Create an Account</a>
+                    </div>
+                </form>
+            </div>
+        </li>
+    }
+</ul>
+

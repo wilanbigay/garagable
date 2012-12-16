@@ -1,0 +1,53 @@
+﻿.navbar-search {
+    position: relative;
+}
+  
+.navbar-search .search-query {
+    padding-left: 29px;
+}
+
+.navbar-search .icon-search {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    background-image: url("/Content/bootstrap/img/glyphicons-halflings.png");
+}
+
+.navbar-search .search-query:focus, .navbar-search .search-query.focused {
+    padding-left: 30px;
+}
+
+.search-query:focus + .icon-search {
+    background-image: url("/Content/bootstrap/img/glyphicons-halflings.png");
+}
+
+.dropdown-toggle .caret {
+    margin-top: 8px;
+}
+
+div.dropdown-menu {
+    width: 220px;
+    padding-top: 15px;
+}
+
+.dropdown-menu label, .dropdown-menu label {
+    margin-left: 10px;
+}
+
+.dropdown-menu form span, .dropdown-menu form a {
+    display: inline
+}
+
+.sign-in-pulldown input {
+    margin-left: 10px;
+}
+
+.sign-in-pulldown a {
+    font-size: 15px;
+}
+
+
+.dropdown-menu form input[type='text'], .dropdown-menu form input[type='password'] {
+    width: 180px;
+    margin-left: 10px;
+}
