@@ -11,15 +11,12 @@ namespace Garagable.Service {
     public class SecurityService : ISecurityService {
 
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IEncryptor _encryptor;
         private readonly ITokenCreator _tokenCreator;
 
         public SecurityService(
             IUnitOfWork unitOfWork, 
-            IEncryptor encryptor, 
             ITokenCreator tokenCreator) {
             _unitOfWork = unitOfWork;
-            _encryptor = encryptor;
             _tokenCreator = tokenCreator;
         }
 

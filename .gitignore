@@ -19,3 +19,4 @@
 /Garagable.UnitTests.Helpers/bin
 /Garagable.Web/bin
 /Garagable.Web/obj
+*.suo

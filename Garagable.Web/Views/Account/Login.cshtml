@@ -1,0 +1,32 @@
+﻿@model Garagable.Web.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+<h2>Enter your user name and password below.</h2>
+
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true, "Log in was unsuccessful. Please correct the errors and try again.")
+
+    <fieldset>
+        <div>
+            <div>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+            <div>
+                @Html.CheckBoxFor(m => m.RememberMe) @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox", style="display:inline" })
+            </div>
+            <div style="height: 20px"></div>
+        </div>
+        <input type="submit" value="Log in" class="btn btn-primary" /> or @Html.ActionLink("Register", "Register")
+    </fieldset>
+}

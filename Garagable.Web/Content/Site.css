@@ -51,3 +51,7 @@ div.dropdown-menu {
     width: 180px;
     margin-left: 10px;
 }
+
+fieldset li {
+    list-style: none;
+}

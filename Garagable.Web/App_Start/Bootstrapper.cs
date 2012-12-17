@@ -23,6 +23,7 @@ namespace Garagable.Web
         public const string ROLE_REPOSITORY_PROPERTY_NAME           = "RoleRepository";
         public const string SCHEDULE_REPOSITORY_PROPERTY_NAME       = "ScheduleRepository";
         public const string SEARCH_REPOSITORY_PROPERTY_NAME         = "SearchRepository";
+        public const string USER_REPOSITORY_PROPERTY_NAME           = "UserRepository";
 
         public static void Start() {
             var container = BuildUnityContainer();
@@ -65,7 +66,8 @@ namespace Garagable.Web
                                                                 new InjectionProperty(PHOTO_REPOSITORY_PROPERTY_NAME, new ResolvedParameter<IPhotoRepository>()),
                                                                 new InjectionProperty(ROLE_REPOSITORY_PROPERTY_NAME, new ResolvedParameter<IRoleRepository>()),
                                                                 new InjectionProperty(SCHEDULE_REPOSITORY_PROPERTY_NAME, new ResolvedParameter<IScheduleRepository>()),
-                                                                new InjectionProperty(SEARCH_REPOSITORY_PROPERTY_NAME, new ResolvedParameter<ISearchRepository>())
+                                                                new InjectionProperty(SEARCH_REPOSITORY_PROPERTY_NAME, new ResolvedParameter<ISearchRepository>()),
+                                                                new InjectionProperty(USER_REPOSITORY_PROPERTY_NAME, new ResolvedParameter<IUserRepository>())
                                                             );
 
             //services
