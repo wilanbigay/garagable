@@ -9,7 +9,7 @@ namespace Garagable.Data.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Garagable.Data.GaragableContext context)
