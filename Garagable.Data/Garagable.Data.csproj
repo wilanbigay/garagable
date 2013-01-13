@@ -33,9 +33,6 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Garagable.Helpers">
-      <HintPath>..\Garagable.Helpers\obj\Debug\Garagable.Helpers.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -70,6 +67,10 @@
     <ProjectReference Include="..\Garagable.Data.CodeContracts\Garagable.Data.CodeContracts.csproj">
       <Project>{63A6E3A6-74A0-40C5-8E68-6CCC5A90E69E}</Project>
       <Name>Garagable.Data.CodeContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Garagable.Helpers\Garagable.Helpers.csproj">
+      <Project>{7b98c5ce-0bf6-4546-af3d-120829bf6c35}</Project>
+      <Name>Garagable.Helpers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Garagable.Model\Garagable.Model.csproj">
       <Project>{8fd305da-5864-478a-8e1c-2b98d1977e65}</Project>
